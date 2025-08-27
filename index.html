@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V32MR2ZPT1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-V32MR2ZPT1');
+</script>
+
+  <!-- Favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="https://res.cloudinary.com/dezkyrcvs/image/upload/v1755179400/nihalrazap3_7_yk0uol.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://res.cloudinary.com/dezkyrcvs/image/upload/v1755179400/nihalrazap3_7_yk0uol.png">
+
+  <meta charset="UTF-8" />
+  <title>Nihal Raza – AI-led Full-Stack Growth Marketer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AI-driven, full-stack marketing strategist for ambitious brands. Portfolio, services, and results." />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:400,600,700&display=swap" />
+  <style>
+    :root {
+      --offwhite: #f7fafc;
+      --pastel-blue: #e4efff;
+      --gold: #cbb26a;
+      --elegant-black: #181d23;
+      --text: #232b35;
+      --subtext: #637080;
+      --border: #e7eaf0;
+      --radius: 18px;
+      --shadow: 0 2px 16px 0 rgba(80,76,105,0.07);
+      --shadow-hover: 0 7px 30px 0 rgba(180,165,90,0.11);
+      --transition: .18s cubic-bezier(.44,0,.2,1);
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--offwhite);
+      color: var(--text);
+      font-family: 'Inter', Arial, sans-serif;
+      margin: 0;
+      font-size: 18px;
+      line-height: 1.6;
+      letter-spacing: -0.01em;
+    }
+    h1, h2, h3 { color: var(--elegant-black); font-weight: 700; }
+    h1 { font-size: 2.3em; margin-bottom: 0.1em; }
+    h2 { font-size: 1.5em; }
+    h3 { font-size: 1.1em; }
+    /* Navbar */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+      box-shadow: 0 1px 12px rgba(80,100,110,0.04);
+      display: flex; align-items: center; justify-content: space-between;
+      height: 62px; padding: 0 34px;
+    }
+    .brandlogo { font-weight: 900; font-size: 1.08em; color: var(--elegant-black); cursor: pointer; letter-spacing:0.01em;}
+    .navmenu { list-style: none; display: flex; gap: 0.2em; margin:0; padding:0;}
+    .navmenu li a, .navmenu li button {
+      background: none;
+      color: var(--subtext);
+      text-decoration: none;
+      border: none;
+      padding: 8px 15px;
+      margin: 0 1px;
+      font-weight: 600;
+      font-size: 1em;
+      border-radius: 999px;
+      transition: background .14s, color .12s;
+      cursor: pointer;
+    }
+    .navmenu li a.active, .navmenu li a:focus {color: var(--elegant-black); background: var(--pastel-blue);}
+    .navmenu li a:hover { background: var(--gold); color: var(--elegant-black);}
+    .navmenu .contact-cta {
+      background: var(--gold)!important; color: var(--elegant-black)!important;
+      font-weight: 700; margin-left: 12px;
+      box-shadow: 0 2px 12px 0 rgba(205,165,55,0.09);
+      transition:box-shadow .14s;
+    }
+    .navmenu .contact-cta:hover { box-shadow: 0 7px 22px 0 rgba(205,180,60,0.12); }
+    /* Hamburger */
+    #nav-toggle { display: none; background: none; border: none; font-size: 2em; margin-left: 9px; color: var(--elegant-black); cursor: pointer;}
+    .nav-overlay {display:none;position:fixed;inset:0;background:rgba(34,39,51,0.13);z-index:999;transition:opacity .18s;}
+    @media (max-width: 900px) {
+      nav { padding: 0 10px; }
+      .navmenu { flex-direction: column; gap:0; position: fixed; right: 0; top: 62px; background: #fff; width: 180px; display: none; border-radius:0 0 0 18px;border:1px solid var(--border); box-shadow: -2px 0 24px 0 rgba(60,60,100,0.07);}
+      .navmenu.show { display: flex; }
+      #nav-toggle { display: block;}
+      .navmenu li { width: 100%; }
+      .navmenu li a, .navmenu li button { width: 100%; text-align: left; padding: 14px 22px; font-size: 1.1em;}
+      .nav-overlay.show { display: block; }
+    }
+
+    /* Hero */
+    .hero {
+      min-height: 55vh;
+      display:flex; flex-direction: column; align-items: center; justify-content: center;
+      background: linear-gradient(105deg, var(--pastel-blue) 83%, var(--offwhite) 100%);
+      border-bottom-left-radius: 36px;
+      border-bottom-right-radius: 36px;
+      padding:72px 0 48px 0;
+      text-align: center;
+    }
+    .hero-pic {
+      width: 115px; height: 115px; border-radius: 50%; object-fit: cover;
+      border: 8px solid #fff; margin-bottom: 17px; box-shadow: 0 2px 20px #dbe7ff40;
+    }
+    .hero-title { font-size: 2em; font-weight: 900; margin-bottom: 5px; color: var(--elegant-black); }
+    .hero-roles {
+      font-size: 1.05em; font-weight: 700;
+      color: var(--gold); letter-spacing:0.01em; min-height:2.2em; margin-bottom:7px;
+      animation: roles-animate 1s ease;
+    }
+    .hero-desc { font-size: 1.07em; color: var(--subtext); margin-bottom: 18px;margin-top: 5px;}
+    .hero-cta { display: flex; gap: 13px; flex-wrap: wrap; justify-content: center; margin-top: 4px; }
+    .hero-cta a {
+      font-weight: 700; font-size: 1em;
+      background: var(--elegant-black); color: #fff;
+      border-radius: 999px; border: none; padding: 13px 25px;
+      margin: 4px 0; cursor: pointer;
+      text-decoration: none;
+      transition: background .13s, color .13s, box-shadow .13s, transform .11s;
+      box-shadow: 0 2px 8px 0 #dadce840;
+      display: inline-block;
+    }
+    .hero-cta a.secondary {
+      background: #fff; color: var(--elegant-black); border: 1.2px solid var(--elegant-black);
+    }
+    .hero-cta a:focus,
+    .hero-cta a:hover {background: var(--gold);color: var(--elegant-black);}
+    .hero-cta a.secondary:hover {background:var(--pastel-blue);}
+    .hero-scroll {
+      margin-top: 36px; color: var(--gold); font-size: 1.7em; animation: bounce 2.5s infinite;
+      cursor: pointer;
+    }
+    @keyframes bounce {
+      0%,100% { transform: translateY(0);}
+      15% {transform: translateY(7px);}
+      35% {transform: translateY(-4px);}
+      70% {transform:translateY(0);}
+    }
+
+    /* General Section Styling */
+    section { max-width:1050px; margin:0 auto; padding:52px 18px 38px 18px;}
+    .section-title { font-size: 1.32em; font-weight: 900; margin-bottom: 10px;}
+    .section-tagline { color: var(--gold); font-weight: 700; font-size:1em; letter-spacing: 0.09em; margin-bottom:10px;}
+
+    /* About */
+    .about-box { display:flex; gap:30px; align-items:center;}
+    .about-img { width:112px; height:122px; object-fit: cover; border-radius: 15px; box-shadow:0 2px 20px #d7e7f540;}
+    .about-content { flex:1;}
+    .about-content h2 { margin-bottom:7px;}
+    @media (max-width:700px){.about-box{flex-direction:column;align-items:center;gap:16px;}.about-img{width:80px;height:80px;}}
+
+    /* Work (Portfolio) */
+    .work-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin-top: 24px;}
+    .work-card {
+      background:#fff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border:1px solid var(--border);
+      text-align:center;
+      padding:18px 14px 12px 14px;
+      transition: box-shadow .14s, transform .11s;
+      display: flex; flex-direction: column; align-items: center;
+      min-height: 180px;
+    }
+    .work-card:hover { box-shadow: var(--shadow-hover); transform:translateY(-2.5px) scale(1.018);}
+    .brand-logo {height:38px; max-width:75px; object-fit:contain; margin-bottom:11px; background:#f8fafb; border-radius:8px;}
+    .work-title { font-weight: 700; color: var(--elegant-black);}
+    .work-desc { font-size: 0.99em; color: var(--subtext); margin:8px 0;}
+    .work-link {
+      background: var(--pastel-blue); color: var(--elegant-black);
+      border-radius: 999px; padding: 7px 26px; font-weight:600;
+      text-decoration: none; margin-top:10px;
+      transition:background .14s, color .14s;
+      font-size:1em;
+    }
+    .work-link:hover { background: var(--gold); color: var(--elegant-black);}
+    
+    /* Services */
+    .services-grid {display: grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;}
+    .service-card {background:#fff; border-radius:var(--radius); border:1px solid var(--border); box-shadow:var(--shadow); padding:24px 13px 17px 13px; display:flex; flex-direction:column; align-items:center;min-height:155px;transition:box-shadow .13s,transform .11s;}
+    .service-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-2.5px);}
+    .service-icon {font-size:1.95em;color:var(--gold);margin-bottom:10px;}
+    .service-title {font-weight:700;font-size:1.08em;}
+    .service-desc {color:var(--subtext);font-size:.99em;text-align:center; margin-top:6px;}
+
+    /* Testimonials */
+    .testimonials-section {background:var(--offwhite);}
+    .testimonials-slider-wrap{max-width:535px;margin:0 auto;position:relative;}
+    .testimonial-card {background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid var(--border);padding:25px 18px 16px;margin:0;min-height:125px;}
+    .testimonial-quote {font-style:italic;color:var(--elegant-black);margin-bottom:11px;}
+    .testimonial-client {font-weight:600;color:var(--gold);}
+    .testimonial-role {color:var(--subtext);font-size:0.99em;}
+
+    .testimonials-nav {display:flex;justify-content:center;gap:9px;margin-top:10px;}
+    .testimonial-dot {width:11px;height:11px;border-radius:50%;background:var(--pastel-blue);border:none;cursor:pointer;}
+    .testimonial-dot.active{background:var(--gold);}
+
+ /* cssTrusted by section */
+    .trusted-by-section {
+  background-color: transparent; /* ❌ Removed cream, now pure white */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.trusted-by-heading {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 40px;
+  font-style: italic;
+}
+
+.logo-wrapper {
+  background-color: #e5e5e5; /* Light grey pill for contrast */
+  padding: 20px;
+  border-radius: 50px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-track {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  animation: scroll 25s linear infinite;
+  width: max-content;
+  will-change: transform;
+}
+
+.logo-wrapper:hover .logo-track {
+  animation-play-state: paused;
+}
+
+.logo-circle {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  flex-shrink: 0;
+}
+
+.logo-circle:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+.logo-circle img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.logo-circle:hover img {
+  filter: grayscale(0%);
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@media (max-width: 768px) {
+  .logo-track {
+    gap: 20px;
+  }
+  .logo-circle {
+    height: 50px;
+    width: 50px;
+  }
+  .trusted-by-heading {
+    font-size: 1.5rem;
+  }
+}
+    /* Contact */
+    ..contact-form {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px 0 rgba(80,76,105,0.09);
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 28px 22px 19px 22px;
+  border: 1px solid #e7eaf0;
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 13px 12px;
+  border: 1.3px solid #e7eaf0;
+  border-radius: 8px;
+  font-size: 1.07em;
+  background: #fafbfc;
+  color: #232b35;
+  transition: border .14s;
+  margin-bottom: 2px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: 1.6px solid #cbb26a; /* gold accent */
+  outline: none;
+}
+
+.contact-form button {
+  align-self: flex-end;
+  background: #cbb26a;
+  color: #181d23;
+  border: none;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 1.1em;
+  padding: 13px 37px;
+  margin-top: 8px;
+  box-shadow: 0 2px 16px 0 rgba(220,200,80,0.10);
+  transition: background .18s, color .13s, box-shadow .13s;
+}
+
+.contact-form button:hover {
+  background: #181d23;
+  color: #fff;
+  box-shadow: 0 7px 20px 0 rgba(80, 70, 35, 0.12);
+}
+
+.contact-success {
+  color: #cbb26a;
+  margin-top: 8px;
+  font-weight: 600;
+  letter-spacing: .01em;
+}
+
+    /* Footer */
+    footer {background:linear-gradient(90deg,#1b1c21 75%,#23244a 100%);color:#fff;text-align:center;padding:36px 12px 16px 12px;border-top-left-radius:48px;border-top-right-radius:48px;margin-top:38px;font-size:1.04em;}
+    .footer-brand {font-size:1.17em;font-weight:900;letter-spacing:.03em;color:var(--gold);}
+    .footer-links {margin:14px auto 2px;display:flex;justify-content:center;gap:10px;flex-wrap:wrap;}
+    .footer-links a{color:#b1c3e5;text-decoration:none;font-weight:600;padding:7px 12px;border-radius:8px;}
+    .footer-links a:hover{color:var(--gold);background:rgba(229,205,78,0.07);}
+    .footer-socials{margin-top:11px;display:flex;justify-content:center;gap:11px;}
+    .footer-socials a{color:var(--gold);background:#232528;border-radius:9px;padding:7px 13px;text-decoration:none;}
+    .footer-socials a:hover{background:var(--gold);color:#181d23;}
+    .footer-quote{margin-top:15px;color:var(--pastel-blue);font-size:.96em;font-style:italic;}
+    .footer-copyright{color:#a1abb6;margin-top:12px;font-size:.95em;}
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <span class="brandlogo" onclick="window.scrollTo(0,0);">Nihal Raza</span>
+    <button id="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
+    <ul class="navmenu" id="navbar-menu">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#services">Services</a></li>
+      <!--<li><a href="#blog">Blog</a></li>-->
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact" class="contact-cta">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="nav-overlay" id="nav-overlay"></div>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1754043503/nihalrazap2_zwlvqo.png" alt="Nihal Raza - profile headshot" class="hero-pic" />
+    <div class="hero-title">Nihal Raza</div>
+    <div class="hero-roles" id="hero-roles"></div>
+    <div class="hero-desc">
+      AI-driven, full-stack marketing for ambitious brands.<br>
+      Founder, Axiom & Co · Results delivered globally.
+    </div>
+    <div class="hero-cta">
+      <a href="#contact">Contact Me</a>
+      <a href="#work" class="secondary">View Work</a>
+    </div>
+    <div class="hero-scroll" onclick="window.scrollTo({top:document.getElementById('about').offsetTop-50,behavior:'smooth'});" title="Scroll down">
+      ↓
+    </div>
+  </section>
+
+<!-- Trusted By Logo Strip -->
+<section class="trusted-by-section">
+  <div class="container">
+    <h2 class="trusted-by-heading">Trusted by Brands Across Industries</h2>
+    <div class="logo-wrapper">
+      <div class="logo-track">
+        <!-- Replace with your brand logos -->
+        <div class="logo-circle"><img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1754217149/godrej-logo-vector_vp10sv.png" alt="Godrej"></div>
+        <div class="logo-circle"><img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1754216812/Robo_dltfkp.jpg" alt="Robochamps"></div>
+        <div class="logo-circle"><img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1754216812/images_jpebwx.png" alt="NV Clubstraunt"></div>
+        <div class="logo-circle"><img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1754216814/nihalrazap3_1_hdenij.png" alt="World School Summit"></div>
+        <div class="logo-circle"><img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1754216813/logo_qtiojr.png" alt="Chocolate Room"></div>
+        <div class="logo-circle"><img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1754217523/Bakery_6_wbtyo1.png" alt="Fabbakers"></div>
+        <div class="logo-circle"><img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1754218801/nihalrazap3_3_ffrwid.png" alt="countryinn"></div>
+        <div class="logo-circle"><img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1754216812/cougar_izpqod.jpg" alt="Cougar Immigration"></div>
+        <div class="logo-circle"><img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1754217933/nihalrazap3_2_y7f8oq.png" alt="Teeny Weeny"></div>
+        <div class="logo-circle"><img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1754216813/images_3_swstzr.jpg" alt="jungle barbeque"></div>
+        <div class="logo-circle"><img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1754216812/cosmodermago_cjrdts.jpg" alt="Cosmodermago"></div>
+        <div class="logo-circle"><img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1754216813/prashant_xu1cvq.png" alt="Prashant JI"></div>
+         <div class="logo-circle"><img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1754218984/images_4_a1meuh.jpg" alt="Mulberry"></div>
+          <div class="logo-circle"><img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1754217310/images_1_tlnkg1.png" alt="gutgully"></div>
+           <div class="logo-circle"><img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1754219166/R_sadfuy.png" alt="rokka"></div>
+            <div class="logo-circle"><img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1754216813/nihal_tleepm.png" alt="coa"></div>
+            <div class="logo-circle"><img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1754216813/images_3_swstzr.jpg" alt="jungle barbeque"></div>
+            <div class="logo-circle"><img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1754216813/nihalrazap3_s40ats.png" alt="ISA"></div>
+
+        
+        <!-- Duplicate few for loop scroll effect -->
+        <div class="logo-circle"><img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1754217149/godrej-logo-vector_vp10sv.png" alt="Godrej"></div>
+        <div class="logo-circle"><img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1754216812/Robo_dltfkp.jpg" alt="Robochamps"></div>
+        <div class="logo-circle"><img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1754216812/images_jpebwx.png" alt="NV Clubstraunt"></div>
+        <div class="logo-circle"><img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1754216814/nihalrazap3_1_hdenij.png" alt="World School Summit"></div>
+        <div class="logo-circle"><img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1754216813/logo_qtiojr.png" alt="Chocolate Room"></div>
+        <div class="logo-circle"><img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1754217523/Bakery_6_wbtyo1.png" alt="Fabbakers"></div>
+        <div class="logo-circle"><img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1754218801/nihalrazap3_3_ffrwid.png" alt="countryinn"></div>
+        <div class="logo-circle"><img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1754216812/cougar_izpqod.jpg" alt="Cougar Immigration"></div>
+        <div class="logo-circle"><img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1754217933/nihalrazap3_2_y7f8oq.png" alt="Teeny Weeny"></div>
+        <div class="logo-circle"><img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1754216813/images_3_swstzr.jpg" alt="jungle barbeque"></div>
+        <div class="logo-circle"><img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1754216812/cosmodermago_cjrdts.jpg" alt="Cosmodermago"></div>
+        <div class="logo-circle"><img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1754216813/prashant_xu1cvq.png" alt="Prashant JI"></div>
+         <div class="logo-circle"><img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1754218984/images_4_a1meuh.jpg" alt="Mulberry"></div>
+          <div class="logo-circle"><img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1754217310/images_1_tlnkg1.png" alt="gutgully"></div>
+           <div class="logo-circle"><img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1754219166/R_sadfuy.png" alt="rokka"></div>
+            <div class="logo-circle"><img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1754216813/nihal_tleepm.png" alt="coa"></div>
+            <div class="logo-circle"><img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1754216813/nihalrazap3_s40ats.png" alt="ISA"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="section-tagline">About Me</div>
+    <div class="about-box">
+      <img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1754045718/nihalrazap3_xsdjt9.png" alt="About Nihal Raza" class="about-img" />
+      <div class="about-content">
+        <h2 class="section-title">Strategist for the Next Era of Growth</h2>
+        <p>
+          Hi, I’m Nihal—an AI-led, full-stack digital marketer and founder of Axiom & Co.<br>
+          I help brands unlock performance through advanced automation, deep insight, and creative storytelling.<br>
+          I value ethical growth, user empathy, and results you can measure. Let's engineer your breakthrough.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work/Portfolio -->
+  <section id="work">
+    <div class="section-tagline">Selected Clients</div>
+    <h2 class="section-title">Work That Moves Brands Forward</h2>
+    <div class="work-grid">
+      <!-- Example work card, repeat as needed -->
+      <div class="work-card">
+        <img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1754216812/Robo_dltfkp.jpg" class="brand-logo" alt="Robochamps">
+        <div class="work-title">Robochamps</div>
+        <div class="work-desc">International digital campaigns & lead automation for EdTech.
+</div>
+        <a href="https://nihalraza.com/case_study.html" target="_blank" class="work-link">Know More</a>
+      </div>
+      <div class="work-card">
+        <img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1754216812/images_jpebwx.png" class="brand-logo" alt="NV Clubstraunt">
+        <div class="work-title">NV Clubstraunt</div>
+        <div class="work-desc">High-impact launch strategy for hospitality brand.</div>
+        <a href="https://nihalraza.com/case_study.html" target="_blank" class="work-link">Know More</a>
+      </div>
+      <div class="work-card">
+        <img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1754216814/nihalrazap3_1_hdenij.png" class="brand-logo" alt="WSS">
+        <div class="work-title">World School Summit</div>
+        <div class="work-desc">Global event marketing & funnel automation for EdTech conferences.
+</div>
+        <a href="https://nihalraza.com/case_study.html" target="_blank" class="work-link">Know More</a>
+      </div>
+      <div class="work-card">
+        <img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1754217149/godrej-logo-vector_vp10sv.png" class="brand-logo" alt="Godrej Properties">
+        <div class="work-title">Godrej Properties</div>
+        <div class="work-desc">End-to-end event execution with vendor management & MLP setup.</div>
+        <a href="https://nihalraza.com/case_study.html" target="_blank" class="work-link">Know More</a>
+      </div>
+      <div class="work-card">
+        <img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1754217523/Bakery_6_wbtyo1.png" class="brand-logo" alt="Fabbakers">
+        <div class="work-title">Fabbakers</div>
+        <div class="work-desc">Executed full GTM: branding, website, GMB & food app launch.</div>
+        <a href="https://nihalraza.com/case_study.html" target="_blank" class="work-link">Know More</a>
+      </div>
+      <div class="work-card">
+        <img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1754232105/cougar_izpqod.png" class="brand-logo" alt="Cougar Immigration">
+        <div class="work-title">Cougar Immigration</div>
+        <div class="work-desc">SEO-driven growth & social media marketing for immigration services.</div>
+        <a href="https://nihalraza.com/case_study.html" target="_blank" class="work-link">Know More</a>
+      </div>
+      <div class="work-card">
+        <img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1754216813/logo_qtiojr.png" class="brand-logo" alt="The Chocolate Room">
+        <div class="work-title">The Chocolate Room</div>
+        <div class="work-desc">Brand strategy & campaign automation for retail chain.</div>
+        <a href="https://nihalraza.com/case_study.html" target="_blank" class="work-link">Know More</a>
+      </div>
+      <div class="work-card">
+        <img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1754217310/images_1_tlnkg1.png" class="brand-logo" alt="Maison De Fauzdar">
+        <div class="work-title">Maison De Fauzdar</div>
+        <div class="work-desc">Luxury brand consultancy with focus on website UX & positioning.
+</div>
+        <a href="https://nihalraza.com/case_study.html" target="_blank" class="work-link">Know More</a>
+      </div>
+      <div class="work-card">
+        <img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1754233286/nihalrazap3_5_tnrscp.png" class="brand-logo" alt="countryinn">
+        <div class="work-title">Country Inn</div>
+        <div class="work-desc">Visual content, GMB, WhatsApp outreach & local digital campaigns.</div>
+        <a href="https://nihalraza.com/case_study.html" target="_blank" class="work-link">Know More</a>
+      </div>
+      <div class="work-card">
+        <img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1754216813/nihal_tleepm.png" class="brand-logo" alt="coa">
+        <div class="work-title">Cluster Of Achievers</div>
+        <div class="work-desc">Social media marketing & creative content for global awards platform.</div>
+        <a href="https://nihalraza.com/case_study.html" target="_blank" class="work-link">Know More</a>
+      </div>
+      <div class="work-card">
+        <img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1754217933/nihalrazap3_2_y7f8oq.png" class="brand-logo" alt="teeny weeny">
+        <div class="work-title">Teeny Weeny</div>
+        <div class="work-desc">Landing page, GMB & WhatsApp marketing for kids’ play-zone.</div>
+        <a href="https://nihalraza.com/case_study.html" target="_blank" class="work-link">Know More</a>
+      </div>
+      <div class="work-card">
+        <img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1754216812/images_qcfz1y.jpg" class="brand-logo" alt="Mulberry">
+        <div class="work-title">Mulberry Street Bistro</div>
+        <div class="work-desc">Organic café revamp with brand collabs & GTM rollout.</div>
+        <a href="https://nihalraza.com/case_study.html" target="_blank" class="work-link">Know More</a>
+      </div>
+      <!-- ...add the rest similarly for your brands (placeholders for now) ... -->
+    </div>
+  </section>
+<!--Tech open-->
+<!-- The Tech I Use Section -->
+<section id="tech-stack" style="background: var(--offwhite); padding: 60px 18px;">
+  <div class="section-tagline">The Tech I Use</div>
+  <h2 class="section-title">Powerful tools that bring my ideas to life.</h2>
+
+  <div class="tech-card">
+    <div class="logo-grid">
+<!-- Marketing & SEO -->
+<div class="logo-item">
+  <img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1755167344/7_qvugyq.svg" data-name="Google Ads" style="--i:1" alt="Google Ads">
+</div>
+<div class="logo-item">
+  <img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1755167344/8_impj45.svg" data-name="Google Analytics (GA4)" style="--i:2" alt="Google Analytics">
+</div>
+<div class="logo-item">
+  <img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1755167345/9_nnxtni.svg" data-name="Google Search Console" style="--i:3" alt="Google Search Console">
+</div>
+<div class="logo-item">
+  <img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1755749056/1_xzqdjn.svg" data-name="Google Tag Manager" style="--i:4" alt="Google Tag Manager">
+</div>
+<div class="logo-item">
+  <img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1755167342/6_ispm5j.svg" data-name="Meta Ads Manager" style="--i:5" alt="Meta Ads Manager">
+</div>
+<div class="logo-item">
+  <img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1755749384/l_logo12_rvztid.svg" data-name="LinkedIn Ads" style="--i:6" alt="LinkedIn Ads">
+</div>
+<div class="logo-item">
+  <img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1755502855/10_yunlhw.svg" data-name="Ahrefs" style="--i:7" alt="Ahrefs">
+</div>
+<div class="logo-item">
+  <img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1755167342/4_frs6gl.svg" data-name="SEMrush" style="--i:8" alt="SEMrush">
+</div>
+
+<!-- Web Development -->
+<div class="logo-item">
+  <img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1755502852/3_tuyliv.svg" data-name="HTML5" style="--i:9" alt="HTML5">
+</div>
+<div class="logo-item">
+  <img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1755502852/2_m2avoq.svg" data-name="CSS3" style="--i:10" alt="CSS3">
+</div>
+<div class="logo-item">
+  <img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1755502853/4_f4s5gm.svg" data-name="JavaScript" style="--i:11" alt="JavaScript">
+</div>
+<div class="logo-item">
+  <img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1755502853/5_exvejv.svg" data-name="PHP" style="--i:12" alt="PHP">
+</div>
+<div class="logo-item">
+  <img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1755502853/6_huxdkx.svg" data-name="MySQL" style="--i:13" alt="MySQL">
+</div>
+<div class="logo-item">
+  <img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1755167343/5_lz0tnq.svg" data-name="WordPress" style="--i:14" alt="WordPress">
+</div>
+<div class="logo-item">
+  <img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1755502854/8_ddt1nb.svg" data-name="Shopify" style="--i:15" alt="Shopify">
+</div>
+<div class="logo-item">
+  <img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1755749055/3_wqe0ae.svg" data-name="Cloudflare" style="--i:16" alt="Cloudflare">
+</div>
+
+<!-- Design & Creativity -->
+<div class="logo-item">
+  <img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1755749058/4_hagzgi.svg" data-name="Adobe Photoshop" style="--i:17" alt="Adobe Photoshop">
+</div>
+<div class="logo-item">
+  <img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1755749057/5_isubnc.svg" data-name="Adobe Premiere Pro" style="--i:18" alt="Adobe Premiere Pro">
+</div>
+<div class="logo-item">
+  <img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1755167349/3_xwxadq.svg" data-name="Canva Pro" style="--i:19" alt="Canva Pro">
+</div>
+<div class="logo-item">
+  <img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1755502854/9_qwkjfj.svg" data-name="Figma" style="--i:20" alt="Figma">
+</div>
+
+<!-- Automation, CRM & Productivity -->
+<div class="logo-item">
+  <img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1755167355/15_s7ie4x.svg" data-name="HubSpot" style="--i:21" alt="HubSpot">
+</div>
+<div class="logo-item">
+  <img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1755167362/21_owxrce.svg" data-name="Zapier" style="--i:22" alt="Zapier">
+</div>
+<div class="logo-item">
+  <img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1755502855/11_v3dwqy.svg" data-name="Mailchimp" style="--i:23" alt="Mailchimp">
+</div>
+<div class="logo-item">
+  <img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1755167362/18_zua881.svg" data-name="Notion" style="--i:24" alt="Notion">
+</div>
+
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+
+  /* open form btn css */
+  .form-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* space between button and icons */
+  margin-top: 10px;
+}
+
+.send-message {
+  padding: 10px 20px;
+  background: #000; /* button color */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.send-message:hover {
+  background: #333; /* darker on hover */
+}
+
+.social-icons a img {
+  vertical-align: middle;
+  transition: transform 0.2s ease;
+}
+
+.social-icons a img:hover {
+  transform: scale(1.1); /* small zoom effect on hover */
+}
+
+.social-icons a {
+  text-decoration: none; /* Removes underline */
+  display: inline-block; /* Avoids weird gaps */
+  margin-right: 12px; /* space between icons */
+}
+
+   /* close form btn css */
+
+
+
+  /* Big Card Styling */
+  .tech-card {
+    background: #fff;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 30px;
+    max-width: 1050px;
+    margin: auto;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: box-shadow 0.18s ease, transform 0.18s ease;
+  }
+  .tech-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-2.5px); }
+
+  /* Logo Grid */
+  .logo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    gap: 25px;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .logo-item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .logo-item img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    animation: float 3s ease-in-out infinite;
+    animation-delay: calc(var(--i) * 0.12s);
+    cursor: pointer;
+  }
+
+  /* Tooltip Label */
+  .logo-item::after {
+    content: attr(data-name);
+    position: absolute;
+    bottom: -28px;
+    background: var(--gold);
+    color: var(--elegant-black);
+    font-size: 0.75em;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 999px;
+    opacity: 0;
+    transform: translateY(5px);
+    pointer-events: none;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    white-space: nowrap;
+  }
+
+  .logo-item:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+
+  @media (max-width: 900px) {
+    .logo-item img { width: 55px; height: 55px; }
+  }
+  @media (max-width: 600px) {
+    .logo-item img { width: 40px; height: 40px; }
+  }
+</style>
+
+<!-- GSAP Animation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.to(".tech-card", {
+    scrollTrigger: {
+      trigger: "#tech-stack",
+      start: "top 85%",
+      toggleActions: "play none none reverse"
+    },
+    opacity: 1,
+    y: 0,
+    duration: 1,
+    ease: "power3.out"
+  });
+
+  // Copy the tool name from image's data-name to the tooltip
+  document.querySelectorAll(".logo-item img").forEach(img => {
+    img.parentElement.setAttribute("data-name", img.getAttribute("data-name"));
+  });
+</script>
+
+<!-- Tech Close-->
+  
+  <!-- Services -->
+  <section id="services">
+    <div class="section-tagline">Expertise</div>
+    <h2 class="section-title">Full-Stack Digital Marketing Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">📈</div>
+        <div class="service-title">Performance Marketing</div>
+        <div class="service-desc">ROI-focused campaigns across Google, Meta, & programmatic.</div>
+      </div>
+      <div class="service-card">
+  <div class="service-icon">🔥</div>
+  <div class="service-title">Viral Marketing</div>
+  <div class="service-desc">Create viral campaigns using influencers and AI trends for massive organic reach on YouTube, Instagram, and more.</div>
+</div>
+<div class="service-card">
+  <div class="service-icon">📊</div>
+  <div class="service-title">Predictive Analytics & Customer Insights</div>
+  <div class="service-desc">Boost growth with AI—predict what customers want, segment better, and run smarter campaigns.</div>
+</div>
+
+      <div class="service-card">
+        <div class="service-icon">🤖</div>
+        <div class="service-title">Agentic AI Marketing</div>
+        <div class="service-desc">AI-powered creative, targeting, and campaign automation.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">📣</div>
+        <div class="service-title">Social Media Marketing</div>
+        <div class="service-desc">Compelling organic & paid strategies across all major platforms.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">📝</div>
+        <div class="service-title">Content Strategy</div>
+        <div class="service-desc">Storytelling and data-backed strategy for brand growth.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🚀</div>
+        <div class="service-title">Go-to-Market</div>
+        <div class="service-desc">Launch and scale products locally and globally for all verticals.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">💡</div>
+        <div class="service-title">Automation & Workflows</div>
+        <div class="service-desc">Seamless CRM, funnel, WhatsApp, and email automations.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🔍</div>
+        <div class="service-title">SEO & Analytics</div>
+        <div class="service-desc">Top rankings and clear reporting for better decisions.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🎨</div>
+        <div class="service-title">Brand Strategy</div>
+        <div class="service-desc">Positioning, creative concepts, and visual identity systems.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🌎</div>
+        <div class="service-title">Website & Funnel Building</div>
+        <div class="service-desc">Modern sites and conversion-focused landing page design.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🤝</div>
+        <div class="service-title">Influencer & Partnerships</div>
+        <div class="service-desc">Curated collaborations for authentic brand reach.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="section-tagline">What Partners Say</div>
+    <h2 class="section-title">Real Results, Real Voices</h2>
+    <div class="testimonials-slider-wrap">
+      <div class="testimonial-card" id="testimonial-slide"></div>
+      <div class="testimonials-nav" id="testimonial-dots"></div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+<section id="contact">
+  <div class="section-tagline">Let's Connect</div>
+  <h2 class="section-title">Ready to Accelerate Growth?</h2>
+ <form class="contact-form" id="contact-form" action="https://formspree.io/f/mqaljvvq" method="POST">
+  <!-- THIS IS THE LINE YOU MUST UPDATE -->
+  <input type="hidden" name="_next" value="https://nihalraza.com/thanksyou_page.html"> 
+  
+  <input type="text" name="name" id="contact-name" placeholder="Your Name*" autocomplete="name" required>
+  <input type="email" name="_replyto" id="contact-email" placeholder="Your Email*" autocomplete="email" required>
+  <textarea name="message" id="contact-message" rows="4" placeholder="How can I help?" required></textarea>
+  
+  <div class="form-actions">
+    <button type="submit" class="send-message">Send Message</button>
+    <div class="social-icons">
+      <a href="mailto:hi@nihalraza.com" title="Email" target="_blank">
+        <img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1755181593/7_fn6drh.png" alt="Email" width="28" height="28">
+      </a>
+      <a href="https://www.linkedin.com/in/nihalrazax/" target="_blank" title="LinkedIn">
+        <img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1755181593/6_hcalpc.png" alt="LinkedIn" width="28" height="28">
+      </a>
+      <a href="https://wa.me/918700312762" target="_blank" title="WhatsApp">
+        <img src="https://res.cloudinary.com/dezkyrcvs/image/upload/v1755181592/5_xefgce.png" alt="WhatsApp" width="28" height="28">
+      </a>
+    </div>
+  </div>
+</form>
+
+</section>
+
+
+  </section>
+
+ 
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-brand">Nihal Raza <span style="color:var(--gold);font-size:1.11em;">|</span> Axiom & Co</div>
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-socials">
+        <a href="mailto:hi@nihalraza.com" aria-label="Email">Email</a>
+        <a href="https://www.linkedin.com/in/nihalrazax/" target="_blank" aria-label="LinkedIn">LinkedIn</a>
+        <a href="https://wa.me/918700312762" target="_blank" aria-label="WhatsApp">WhatsApp</a>
+    </div>
+    <div class="footer-quote">
+      “Authority isn’t loud — it’s trusted.”
+    </div>
+    <div class="footer-copyright">
+      © 2025 Nihal Raza · Axiom & Co. All rights reserved.
+    </div>
+  </footer>
+  <script>
+    // Navbar mobile functionality
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('navbar-menu');
+    const overlay = document.getElementById('nav-overlay');
+    navToggle.onclick = function() {
+      const isOpen = navMenu.classList.toggle('show');
+      overlay.classList.toggle('show', isOpen);
+      navToggle.setAttribute('aria-expanded', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    };
+    overlay.onclick = () => {
+      navMenu.classList.remove('show');
+      overlay.classList.remove('show');
+      navToggle.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    };
+    document.querySelectorAll('.navmenu a').forEach(link => {
+      link.addEventListener('click', function() {
+        if(window.innerWidth <= 900) {
+          navMenu.classList.remove('show');
+          overlay.classList.remove('show');
+          navToggle.setAttribute('aria-expanded', 'false');
+          document.body.style.overflow = '';
+        }
+      });
+    });
+    // Active nav link on scroll
+    window.addEventListener('scroll', function() {
+      let ids = ['home','about','work','services','testimonials','contact'];
+      let last = null;
+      for(let id of ids){
+        let e = document.getElementById(id);
+        if(e && window.scrollY + 70 >= e.offsetTop) last = id;
+      }
+      let nav = document.querySelectorAll('.navmenu a');
+      nav.forEach(a=>a.classList.remove('active'));
+      if(last){
+        let act = document.querySelector('.navmenu a[href="#'+last+'"]');
+        if(act) act.classList.add('active');
+      }
+    });
+
+    // Hero roles dynamic
+    const roles = [
+      "AI-Led Growth Specialist",
+      "Full-Stack Digital Marketer",
+      "Automation Strategist",
+      "Story-Driven Brand Builder"
+    ];
+    let roleIx = 0;
+    function setHeroRole() {
+      const el = document.getElementById('hero-roles');
+      el.textContent = roles[roleIx];
+    }
+    setHeroRole();
+    setInterval(() => {roleIx = (roleIx+1)%roles.length; setHeroRole();}, 2200);
+
+    // Testimonials slider
+    const testimonials = [
+      {
+        quote:"I’ve never met someone so young with such sharp business instincts. Nihal didn’t just advise—he reimagined our growth. His ideas lit a fire in me to dream much bigger for Maison de Fauzdar.",
+        client:"Dimple Fouzdar",
+        role:"Founder, Maison de Fauzdar"
+      },
+      {
+        quote:"Working with Nihal transformed how we approached digital. His strategies brought real results, and the training he gave our team lifted us to a whole new level.",
+        client:"Akshay Ahuja",
+        role:"Co-Founder, Robochamps"
+      },
+      {
+        quote:"Nihal is more than a marketer—he’s a visionary partner. His investor decks, brand strategy, and design instincts attracted high-value stakeholders. His energy, insight, and executional precision accelerated our growth beyond expectations in record time.",
+        client:"Serial Entrepreneur",
+        role:"Anupam Prasad"
+      },
+      {
+        quote:"Nihal redefined success metrics for our agency. He ranked clients on Google’s first page, boosted organic sales, and introduced content formats that multiplied engagement. His precision and creativity set him apart from peers.",
+        client:"Prashant Pandit",
+        role:"Digital Marketer"
+      },
+      {
+        quote:"Our first meeting changed everything. Nihal mapped problems I didn’t even see, automated half our workflow, and gave us clarity. We went from scattered efforts to a marketing system that actually runs itself.",
+        client:"Aman Jain",
+        role:"Serial Entrepreneur"
+      }
+    ];
+    let tIx = 0;
+    function renderTestimonial(i) {
+      document.getElementById('testimonial-slide').innerHTML=`
+        <div class="testimonial-quote">“${testimonials[i].quote}”</div>
+        <div class="testimonial-client">${testimonials[i].client}</div>
+        <div class="testimonial-role">${testimonials[i].role}</div>
+      `;
+      let dots = testimonials.map((_,j)=>`<span class="testimonial-dot${j==i?' active':''}" data-idx="${j}" tabindex="0"></span>`).join('');
+      document.getElementById('testimonial-dots').innerHTML = dots;
+      document.querySelectorAll('.testimonial-dot').forEach(dot=>{
+        dot.onclick=()=>{tIx=Number(dot.dataset.idx);renderTestimonial(tIx);}
+      });
+    }
+    renderTestimonial(0); 
+
+let sliderInterval = setInterval(() => { 
+  tIx = (tIx + 1) % testimonials.length; 
+  renderTestimonial(tIx); 
+}, 9000); // 15 seconds per testimonial
+
+const slider = document.querySelector('.testimonials-slider-wrap');
+
+// Desktop hover pause
+slider.addEventListener('mouseenter', () => clearInterval(sliderInterval));
+slider.addEventListener('mouseleave', () => {
+  sliderInterval = setInterval(() => { 
+    tIx = (tIx + 1) % testimonials.length; 
+    renderTestimonial(tIx); 
+  }, 9000);
+});
+
+// Mobile touch pause
+slider.addEventListener('touchstart', () => clearInterval(sliderInterval));
+slider.addEventListener('touchend', () => {
+  sliderInterval = setInterval(() => { 
+    tIx = (tIx + 1) % testimonials.length; 
+    renderTestimonial(tIx); 
+  }, 9000);
+});
+
+    //renderTestimonial(0); setInterval(()=>{ tIx=(tIx+1)%testimonials.length; renderTestimonial(tIx);}, 12000);
+
+    // Contact form function deleted
+    
+  </script>
+  <script>
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  var form = e.target;
+  var formData = new FormData(form);
+
+  fetch(form.action, {
+      method: form.method,
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    })
+    .then(function(response) {
+      if (response.ok) {
+        // Redirect manually
+        window.location.href = "https://nihalraza.com/thanksyou_page.html";
+      } else {
+        alert('There was a problem submitting your form. Please try again.');
+      }
+    })
+    .catch(function(error) {
+      alert('There was a problem submitting your form. Please try again.');
+    });
+});
+</script>
+
+</body>
+</html>
